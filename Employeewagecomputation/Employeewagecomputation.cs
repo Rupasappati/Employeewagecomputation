@@ -8,7 +8,8 @@ namespace Employeewagecomputation
 {
     public class Employeewagecomputation
     {
-
+        int WAGE_PER_HOUR = 20;
+        int FULL_DAY_HOUR = 8;
         bool IsPresent;
         public void checkEmpISPresentOrNot()
         {
@@ -25,6 +26,14 @@ namespace Employeewagecomputation
                 Console.WriteLine("Employee Is Absent");
             }
          
+        }
+        public void calcEmpDailywage()
+        {
+            if (IsPresent)
+            {
+                int empDailyWage = WAGE_PER_HOUR * FULL_DAY_HOUR;
+                Console.WriteLine("Employee Daily Wage is {0}", empDailyWage);
+            }
         }
 
 

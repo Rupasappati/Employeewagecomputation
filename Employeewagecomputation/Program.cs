@@ -11,6 +11,7 @@ namespace Employeewagecomputation
 
             Employeewagecomputation objEmp = new Employeewagecomputation();
             objEmp.checkEmpISPresentOrNot();
+            objEmp.calcEmpDailywage();
 
         }
     }
