@@ -9,6 +9,7 @@ namespace Employeewagecomputation
     public class Employeewagecomputation
     {
         int WAGE_PER_HOUR = 20;
+        int WORKING_DAYS = 20;
         const int FULL_DAY_HOUR = 8;
         const int PART_TIME_HOUR = 4;
         bool IsPresent;
@@ -68,7 +69,7 @@ namespace Employeewagecomputation
         {
             int emphrs = 0;
             int empwage = 0;
-            int num = generateNum.Next(0, 2);
+            int num = generateNum.Next(0, 3);
             switch (num)
             {
                 case FULL_DAY_HOUR:
@@ -78,12 +79,38 @@ namespace Employeewagecomputation
                     emphrs = 4;
                     break;
                 default:
-                    Console.WriteLine("emp is absent");
+                    Console.WriteLine("Employee is absent");
                     break;
 
             }
             empwage = emphrs * WAGE_PER_HOUR;
-            Console.WriteLine("Emp wage is {0}", empwage);
+            Console.WriteLine("Employee wage is {0}", empwage);
+        }
+        public void WagesForMonth()
+        {
+            int TotalWage = 0;
+            for (int day = 1; day <= WORKING_DAYS; day++)
+            {
+                
+                
+                int num = generateNum.Next(0, 3);
+                int WorkingHours = 0;
+                switch (num)
+                {
+                    case FULL_DAY_HOUR:
+                        WorkingHours = 8;
+                        break;
+                    case PART_TIME_HOUR:
+                        WorkingHours = 4;
+                        break;
+                    
+                }
+
+                int Empwage = WorkingHours * WAGE_PER_HOUR;
+                Console.WriteLine("Employee wage is {0}", Empwage);
+                TotalWage += Empwage;
+            }
+            Console.WriteLine("Total Wage For a Month is {0}", TotalWage);
         }
         
         

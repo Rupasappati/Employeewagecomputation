@@ -14,9 +14,11 @@ namespace Employeewagecomputation
             objEmp.calcEmpDailywage();
             objEmp.checkEmpFullOrPartTime();
             objEmp.switchcase();
-           
+            objEmp.WagesForMonth();
 
-           
+
+
+
 
         }
     }
