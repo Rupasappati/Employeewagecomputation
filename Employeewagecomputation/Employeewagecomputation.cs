@@ -9,11 +9,13 @@ namespace Employeewagecomputation
     public class Employeewagecomputation
     {
         int WAGE_PER_HOUR = 20;
-        int FULL_DAY_HOUR = 8;
-        int PART_TIME_HOUR = 4;
+        const int FULL_DAY_HOUR = 8;
+        const int PART_TIME_HOUR = 4;
         bool IsPresent;
         bool IsFulltime;
         bool IsParttime;
+        //const int Is_parttime = 1;
+        
 
         Random generateNum = new Random();
 
@@ -61,6 +63,27 @@ namespace Employeewagecomputation
                 IsFulltime = false;
                 Console.WriteLine("Part Time Employee");
             }
+        }
+        public void switchcase()
+        {
+            int emphrs = 0;
+            int empwage = 0;
+            int num = generateNum.Next(0, 2);
+            switch (num)
+            {
+                case FULL_DAY_HOUR:
+                    emphrs = 8;
+                    break;
+                case PART_TIME_HOUR:
+                    emphrs = 4;
+                    break;
+                default:
+                    Console.WriteLine("emp is absent");
+                    break;
+
+            }
+            empwage = emphrs * WAGE_PER_HOUR;
+            Console.WriteLine("Emp wage is {0}", empwage);
         }
         
         

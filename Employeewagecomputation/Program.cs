@@ -11,8 +11,9 @@ namespace Employeewagecomputation
 
             Employeewagecomputation objEmp = new Employeewagecomputation();
             objEmp.checkEmpISPresentOrNot();
-            objEmp.checkEmpFullOrPartTime();
             objEmp.calcEmpDailywage();
+            objEmp.checkEmpFullOrPartTime();
+            objEmp.switchcase();
            
 
            
