@@ -16,6 +16,9 @@ namespace Employeewagecomputation
             objEmp.switchcase();
             objEmp.WagesForMonth();
 
+            WagesTillCondition wagesTillCondition = new WagesTillCondition();
+            wagesTillCondition.GetWageTillCondition();
+
 
 
 

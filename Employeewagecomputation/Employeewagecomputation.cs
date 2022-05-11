@@ -15,7 +15,7 @@ namespace Employeewagecomputation
         bool IsPresent;
         bool IsFulltime;
         bool IsParttime;
-        //const int Is_parttime = 1;
+       
         
 
         Random generateNum = new Random();
@@ -34,7 +34,7 @@ namespace Employeewagecomputation
                 IsPresent = false;
                 Console.WriteLine("Employee Is Absent");
             }
-
+            Console.WriteLine("\n\n");
         }
         public void calcEmpDailywage()
         {
@@ -49,6 +49,7 @@ namespace Employeewagecomputation
                 int empDailyWage = WAGE_PER_HOUR * FULL_DAY_HOUR;
                 Console.WriteLine("Employee Daily Wage is {0}", empDailyWage);
             }
+            Console.WriteLine("\n\n");
         }
         public void checkEmpFullOrPartTime()
         {
@@ -64,6 +65,7 @@ namespace Employeewagecomputation
                 IsFulltime = false;
                 Console.WriteLine("Part Time Employee");
             }
+            Console.WriteLine("\n\n");
         }
         public void switchcase()
         {
@@ -85,6 +87,7 @@ namespace Employeewagecomputation
             }
             empwage = emphrs * WAGE_PER_HOUR;
             Console.WriteLine("Employee wage is {0}", empwage);
+            Console.WriteLine("\n\n");
         }
         public void WagesForMonth()
         {
@@ -111,6 +114,7 @@ namespace Employeewagecomputation
                 TotalWage += Empwage;
             }
             Console.WriteLine("Total Wage For a Month is {0}", TotalWage);
+            Console.WriteLine("\n\n");
         }
         
         
