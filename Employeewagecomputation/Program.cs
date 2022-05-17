@@ -30,9 +30,7 @@ namespace Employeewagecomputation
             //Calculating Wages for a month
             objEmp.WagesForMonth();
             
-           
-
-            WagesTillCondition wagesTillCondition = new WagesTillCondition();
+           WagesTillCondition wagesTillCondition = new WagesTillCondition();
             wagesTillCondition.GetWageTillCondition();
 
             Console.WriteLine("Employee Wage  for multiple companies ");
