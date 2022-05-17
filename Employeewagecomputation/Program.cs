@@ -33,10 +33,18 @@ namespace Employeewagecomputation
            
 
             WagesTillCondition wagesTillCondition = new WagesTillCondition();
-            //Calculating Wages till the condition of 100 hours of month or 20 days…
             wagesTillCondition.GetWageTillCondition();
 
+            Console.WriteLine("Employee Wage  for multiple companies ");
 
+            MultipleCompanies campany1 = new MultipleCompanies("Google", 20, 2, 10);
+            campany1.ComputeEmpWage();
+
+            MultipleCompanies campany2= new MultipleCompanies("Microsoft", 10, 4, 20);
+            campany2.ComputeEmpWage();
+            MultipleCompanies campany3 = new MultipleCompanies("Deloitte", 15, 3, 15);
+            campany3.ComputeEmpWage();
+            
 
 
 
