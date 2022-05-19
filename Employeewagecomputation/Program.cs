@@ -42,7 +42,20 @@ namespace Employeewagecomputation
             campany2.ComputeEmpWage();
             MultipleCompanies campany3 = new MultipleCompanies("Deloitte", 15, 3, 15);
             campany3.ComputeEmpWage();
+
+
+            SaveTotalWageByCompany google = new SaveTotalWageByCompany("Google", 10, 4, 20);
+            google.TotalWageForEachCompany();
             
+
+            SaveTotalWageByCompany microsoft = new SaveTotalWageByCompany("Microsoft", 20, 5, 20);
+            microsoft.TotalWageForEachCompany();
+            
+
+            SaveTotalWageByCompany deloitte = new SaveTotalWageByCompany("Deloitte", 30, 3, 30);
+            deloitte.TotalWageForEachCompany();
+            
+
 
 
 
